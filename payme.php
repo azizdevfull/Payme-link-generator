@@ -1,9 +1,11 @@
 <?php
 
-class PayComResponse {
+class PayComResponse
+{
     const LINK = 'https://checkout.paycom.uz';
 
-    public static function createInitialization() {
+    public static function createInitialization()
+    {
         $TOKEN = '64ef2f2d9f1e571160d52f76';
         $order_id = '1';
         $amount = 5000; // Amount must be decimal
@@ -15,6 +17,4 @@ class PayComResponse {
     }
 }
 
-// Example usage:
 PayComResponse::createInitialization();
-?>
